@@ -1,0 +1,50 @@
+﻿@using KitapSatis.Entities.ValueObject
+@model GirisViewModel
+@{
+    ViewBag.Title = "Giriş Sayfası";
+}
+
+<link href="~/Content/giris-uye.css" rel="stylesheet" />
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+@using (Html.BeginForm())
+{
+<section class="login-info">
+    <div class="container">
+        <div class="row main">
+            <div class="form-header">
+                <h1 class="text-center ">GİRİŞ YAP</h1>
+            </div>
+            <div class="main-content">
+                @Html.ValidationSummary(false)
+                @if (ViewBag.SetLink!=null)
+                {
+                    <a href="@ViewBag.SetLink" class="btn btn-primary">Aktivasyon</a>
+                }
+                <div class="input-group ">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+                    @Html.TextBoxFor(model => model.KullaniciAdi, new { @class = "form-control", placeholder = "Kullanıcı Adı" })
+
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+                    @Html.TextBoxFor(model => model.Sifre, new { @class = "form-control", placeholder = "Şifre", type = "password" })
+
+                </div>
+
+               
+                <div class="form-group ">
+                    <button type="submit" class="btn btn-danger btn-lg btn-block login-button">GİRİŞ</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+}
+
+
+

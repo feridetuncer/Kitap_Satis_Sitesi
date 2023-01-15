@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Hesap Aktifleştirildi.";
+}
+
+<link href="~/Content/giris-uye.css" rel="stylesheet" />
+<section class="login-info">
+    <div class="container">
+        <div class="row main">
+            <div class="form-header">
+                <h1 class="text-center ">Yönlendiriliyorsunuz...</h1>
+            </div>
+            <div class="main-content">
+
+                <div class="text-success ">
+                    <h2><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Hesap Aktifleştirildi.</h2>
+                    <hr />
+                    <p class="text-justify">
+                        Hesabınız aktifleştirildi. Artık tüm işlemlerinizi kolayca yapabilirsiniz.
+                    </p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $(function () {
+        setTimeout(function () {
+            window.location = "/Home/Index";
+        }, 10000);
+
+    });
+</script>
+

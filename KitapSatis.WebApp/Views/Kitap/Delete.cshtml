@@ -1,0 +1,95 @@
+﻿@model KitapSatis.Entities.Kitap
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h2>Sil</h2>
+        <h3>Silmek istediğinize emin misiniz?</h3>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h4>Kitap</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Kategori.Baslik)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Kategori.Baslik)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.KitapAdi)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.KitapAdi)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Yazar)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Yazar)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Yayinevi)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Yayinevi)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Fiyat)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Fiyat)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Olusturma)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Olusturma)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Degistirme)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Degistirme)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DegKullanici)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DegKullanici)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</div>

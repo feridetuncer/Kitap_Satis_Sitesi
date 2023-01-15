@@ -1,0 +1,66 @@
+﻿@model IEnumerable<KitapSatis.Entities.Kategori>
+
+@{
+    ViewBag.Title = "Kategoriler";
+}
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <h2>Kategoriler</h2>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <p>
+            @Html.ActionLink("Yeni Oluştur", "Create")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Baslik)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Aciklama)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Olusturma)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Degistirme)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DegKullanici)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Baslik)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Aciklama)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Olusturma)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Degistirme)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DegKullanici)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+
+        </table>
+</div>
+</div>

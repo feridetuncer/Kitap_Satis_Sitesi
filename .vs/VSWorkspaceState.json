@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\KitapSatis.BusinessLayer",
+    "\\KitapSatis.BusinessLayer\\Absract",
+    "\\KitapSatis.Common",
+    "\\KitapSatis.Core",
+    "\\KitapSatis.DataAccessLayer",
+    "\\KitapSatis.DataAccessLayer\\EntityFramework",
+    "\\KitapSatis.Entities",
+    "\\KitapSatis.WebApp"
+  ],
+  "SelectedNode": "\\KitapSatis.DataAccessLayer\\EntityFramework\\Repository.cs",
+  "PreviewInSolutionExplorer": false
+}

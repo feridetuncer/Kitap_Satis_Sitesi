@@ -1,0 +1,74 @@
+﻿@model KitapSatis.Entities.Kategori
+
+@{
+    ViewBag.Title = "Delete";
+}
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h2>Sil</h2>
+        <h3>Silmek istediğinize emin misiniz?</h3>
+    </div>
+
+</div>
+
+
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h4>Kategori</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Baslik)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Baslik)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Aciklama)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Aciklama)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Olusturma)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Olusturma)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Degistirme)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Degistirme)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DegKullanici)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DegKullanici)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+   
+</div>

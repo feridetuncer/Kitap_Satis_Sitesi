@@ -1,0 +1,15 @@
+﻿@using KitapSatis.BusinessLayer
+@using KitapSatis.Entities 
+    
+@{
+    KategoriYonetim ky = new KategoriYonetim();
+    List<Kategori> list = ky.List();
+ }
+<p class="lead">Kategoriler</p>
+<div class="list-group">
+    <a href="/Home/Index" class="list-group-item"><span class="glyphicon glyphicon-arrow-right"></span> Tümü</a>
+    @foreach(Kategori kat in list ) {
+    <a href="/Home/Kategoriler/@kat.Id" class="list-group-item"><span class="glyphicon glyphicon-arrow-right"></span> @kat.Baslik</a>
+    }
+    
+  </div>

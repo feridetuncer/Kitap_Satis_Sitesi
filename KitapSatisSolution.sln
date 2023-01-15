@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1500
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitapSatis.WebApp", "KitapSatis.WebApp\KitapSatis.WebApp.csproj", "{27A6C731-3E50-4AD7-95A2-1ECCCA90367F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitapSatis.BusinessLayer", "KitapSatis.BusinessLayer\KitapSatis.BusinessLayer.csproj", "{E791CDDD-6DAE-4B88-AB4A-58E5229C7C92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitapSatis.DataAccessLayer", "KitapSatis.DataAccessLayer\KitapSatis.DataAccessLayer.csproj", "{A6E73B90-CA22-42DE-84A3-34A50E6AA1E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitapSatis.Entities", "KitapSatis.Entities\KitapSatis.Entities.csproj", "{32AEB9D0-5DD5-4774-9444-3136F9E63C4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitapSatis.Common", "KitapSatis.Common\KitapSatis.Common.csproj", "{39FDE755-02DA-4CA8-BECC-AA079005EF9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitapSatis.Core", "KitapSatis.Core\KitapSatis.Core.csproj", "{4291D40D-93CE-443F-A68C-BD94AC652B98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27A6C731-3E50-4AD7-95A2-1ECCCA90367F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A6C731-3E50-4AD7-95A2-1ECCCA90367F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A6C731-3E50-4AD7-95A2-1ECCCA90367F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A6C731-3E50-4AD7-95A2-1ECCCA90367F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E791CDDD-6DAE-4B88-AB4A-58E5229C7C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E791CDDD-6DAE-4B88-AB4A-58E5229C7C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E791CDDD-6DAE-4B88-AB4A-58E5229C7C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E791CDDD-6DAE-4B88-AB4A-58E5229C7C92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6E73B90-CA22-42DE-84A3-34A50E6AA1E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6E73B90-CA22-42DE-84A3-34A50E6AA1E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6E73B90-CA22-42DE-84A3-34A50E6AA1E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6E73B90-CA22-42DE-84A3-34A50E6AA1E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32AEB9D0-5DD5-4774-9444-3136F9E63C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32AEB9D0-5DD5-4774-9444-3136F9E63C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32AEB9D0-5DD5-4774-9444-3136F9E63C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32AEB9D0-5DD5-4774-9444-3136F9E63C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39FDE755-02DA-4CA8-BECC-AA079005EF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39FDE755-02DA-4CA8-BECC-AA079005EF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39FDE755-02DA-4CA8-BECC-AA079005EF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39FDE755-02DA-4CA8-BECC-AA079005EF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4291D40D-93CE-443F-A68C-BD94AC652B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4291D40D-93CE-443F-A68C-BD94AC652B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4291D40D-93CE-443F-A68C-BD94AC652B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4291D40D-93CE-443F-A68C-BD94AC652B98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDE98F78-469B-4C7B-9956-E8779437982E}
+	EndGlobalSection
+EndGlobal

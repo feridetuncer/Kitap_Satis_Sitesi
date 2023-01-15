@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "UyeOlOk";
+}
+
+<link href="~/Content/giris-uye.css" rel="stylesheet" />
+<section class="login-info">
+    <div class="container">
+        <div class="row main">
+            <div class="form-header">
+                <h1 class="text-center ">Yönlendiriliyorsunuz...</h1>
+            </div>
+            <div class="main-content">
+
+                <div class="text-success ">
+                    <h2><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Başarıyla üye oldunuz.</h2>
+                    <hr/>
+                    <p class="text-justify">
+                        Lütfen e-posta adresinize gönderilen linke tıklayarak hesabınızı aktive ediniz.
+                    </p>
+                    
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $(function () {
+        setTimeout(function () {
+            window.location = "/Home/Index";
+        }, 10000);
+
+    });
+</script>
+
